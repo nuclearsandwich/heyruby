@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Hey Ruby‽ by nuclearsandwich</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+
+      <header>
+        <h1>Hey Ruby‽</h1>
+        <p>Encouraging scientific hypothesizing and experimentation through interactive Ruby</p>
+      </header>
+
+      <div id="banner">
+        <span id="logo"></span>
+
+        <a href="https://github.com/nuclearsandwich/heyruby" class="button fork"><strong>Fork On GitHub</strong></a>
+        <div class="downloads">
+          <span>Downloads:</span>
+          <ul>
+            <li><a href="https://github.com/nuclearsandwich/heyruby/zipball/master" class="button">ZIP</a></li>
+            <li><a href="https://github.com/nuclearsandwich/heyruby/tarball/master" class="button">TAR</a></li>
+          </ul>
+        </div>
+
+      </div><!-- end banner -->
+
+    <div class="wrapper">
+      <nav>
+        <ul></ul>
+      </nav>
+      <section>
+        <p><strong><em>NOTE</em></strong>: Heyruby is still in extreme infancy, so please refrain from
+Tweeting or submitting anything anywhere until I can settle a few more things.
+Direct feedback to <a href="mailto:steven@nuclearsandwich.com">steven@nuclearsandwich.com</a> is, of course, welcome!</p>
+
+<p>Good programmers are like scientists. When they want to answer a question They
+form a hypothesis, then verify it with an experiment. Rubyists have the
+experimentation phase down, but we tend not to hypothesize fully.  This gem
+helps people new to Ruby by prompting them for a hypothesis before returning the
+result of their experiment.</p>
+
+<h2>Installation</h2>
+
+<p>This gem isn't really meant to go in your Gemfile, it's only utility is in
+nagging you to think a bit harder.</p>
+
+<p>Install it yourself as:</p>
+
+<pre><code>$ gem install heyruby
+</code></pre>
+
+<h2>Usage</h2>
+
+<p>Got a question? Ask Ruby!
+I wonder what the line <code>%w[foo bar baz].map{ |s| s.split /[aeiou]/ }.flatten</code>
+does.</p>
+
+<pre><code>$ heyruby
+Hey Ruby‽&gt; %w[foo bar baz].map{ |s| s.split /[aeiou]/ }.flatten
+What do you think the result of
+```
+%w[foo bar baz].map{ |s| s.split /[aeiou]/ }.flatten
+
+```
+will be? (Type . on a line by itself when done)
+| I should get a single array containing the strings ["f", "b", "r", "b",
+| "z"].
+| .
+Were you right?
+Try somthing else&gt;
+</code></pre>
+
+<h2>Origin of the Name</h2>
+
+<p>When I was first learning Ruby in 2009 and 2010, my mental process for doing so
+went along the lines of "Hey Ruby, what's 2 + 2?". This was so pervasive that
+for some time I had <code>alias heyruby='irb'</code> in my bashrc. I hope that heyruby will
+help people new to Ruby to gain the same comfort and casual familiarity with the
+Ruby language that I have been developing since those early days.</p>
+
+<h2>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Added some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+      </section>
+      <footer>
+        <p>Project maintained by <a href="https://github.com/nuclearsandwich">nuclearsandwich</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></small></p>
+      </footer>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><!--<![endif]-->
+    
+  </body>
+</html>
