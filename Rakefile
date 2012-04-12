@@ -1,4 +1,5 @@
 #!/usr/bin/env rake
+
 require "bundler/gem_tasks"
 require "rake/testtask"
 require "mustache"
@@ -12,7 +13,7 @@ task :gemspec do
       :version => %Q<"#{Heyruby::VERSION}">,
       :files => "%w[#{Dir["lib/**/*.rb"].join " "}]",
       :test_files => "%w[#{Dir["spec/**/*"].join " "}]",
-      :bin_files => "[]"
+      :bin_files => "%w[heyruby]"
   end
 end
 

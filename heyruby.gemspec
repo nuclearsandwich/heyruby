@@ -15,15 +15,16 @@ This gem helps people new to Ruby by prompting them for a hypothesis before
 returning the result of their experiment.
   DESC
 
-  s.files         = %w[lib/heyruby/version.rb lib/heyruby.rb]
-  s.test_files    = %w[]
-  s.executables   = []
+  s.files         = %w[lib/heyruby/console.rb lib/heyruby/version.rb lib/heyruby.rb]
+  s.test_files    = %w[spec/console_spec.rb]
+  s.executables   = %w[heyruby]
   s.require_paths = %w[lib]
 
   s.add_development_dependency "rake", "~> 0.9.2"
   s.add_development_dependency "minitest"
   s.add_development_dependency "mustache"
   s.add_development_dependency "bundler"
+  s.add_development_dependency "aruba"
   s.add_runtime_dependency "pry"
 	s.licenses = ['Apache-2.0']
 end
