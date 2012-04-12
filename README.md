@@ -38,6 +38,7 @@ does.
     will be? (Type . on a line by itself when done)
     | I should get a single array containing the strings ["f", "b", "r", "b",
     | "z"].
+    | .
     Were you right?
     Try somthing else>
 
